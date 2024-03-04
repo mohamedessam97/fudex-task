@@ -1,13 +1,71 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 50px;
+  background-color: #f4f4f4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.fileInputStyle {
+  display: none;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.fileInputLabel , .clearButton {
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.fileInputLabel {
+  background-color: #3498db;
+}
+.clearButton {
+  background-color: #d7110e;
+}
+
+
+.content {
+  margin-top: 20px;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.wordTable {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.wordTable th, .wordTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.wordTable th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 16px;
+  margin-top: 10px;
 }
